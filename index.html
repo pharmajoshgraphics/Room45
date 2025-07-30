@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alex - Graphic Designer Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <div class="text-2xl font-bold text-gray-900">
+          Alex<span class="text-indigo-600">.</span>
+        </div>
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex space-x-8">
+          <button data-section="home" class="nav-link text-sm font-medium text-gray-700 hover:text-indigo-600 transition-colors duration-200">Home</button>
+          <button data-section="about" class="nav-link text-sm font-medium text-gray-700 hover:text-indigo-600 transition-colors duration-200">About</button>
+          <button data-section="work" class="nav-link text-sm font-medium text-gray-700 hover:text-indigo-600 transition-colors duration-200">Work</button>
+          <button data-section="services" class="nav-link text-sm font-medium text-gray-700 hover:text-indigo-600 transition-colors duration-200">Services</button>
+          <button data-section="contact" class="nav-link text-sm font-medium text-gray-700 hover:text-indigo-600 transition-colors duration-200">Contact</button>
+        </div>
+        <!-- Mobile Menu Button -->
+        <button id="menu-toggle" class="md:hidden p-2">
+          <!-- Icon will be inserted by JS -->
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden bg-white border-t hidden">
+        <div class="px-4 py-2 space-y-2">
+          <button data-section="home" class="mobile-nav-link block w-full text-left px-4 py-2 text-sm font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">Home</button>
+          <button data-section="about" class="mobile-nav-link block w-full text-left px-4 py-2 text-sm font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">About</button>
+          <button data-section="work" class="mobile-nav-link block w-full text-left px-4 py-2 text-sm font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">Work</button>
+          <button data-section="services" class="mobile-nav-link block w-full text-left px-4 py-2 text-sm font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">Services</button>
+          <button data-section="contact" class="mobile-nav-link block w-full text-left px-4 py-2 text-sm font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">Contact</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-20 pb-16 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row items-center justify-between">
+        <div class="lg:w-1/2 lg:pr-12">
+          <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            Creative
+            <span class="text-indigo-600 block">Graphic Designer</span>
+          </h1>
+          <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+            I transform ideas into compelling visual experiences that captivate audiences and elevate brands.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button data-section="work" class="btn-primary">
+              View My Work
+              <svg id="arrow-right" class="ml-2 inline-block" width="16" height="16"></svg>
+            </button>
+            <button data-section="contact" class="btn-secondary">
+              Get In Touch
+            </button>
+          </div>
+        </div>
+        <div class="lg:w-1/2 mt-12 lg:mt-0">
+          <div class="relative">
+            <div class="w-80 h-80 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-indigo-400 to-purple-500 mx-auto"></div>
+            <img src="https://placehold.co/400x400/ffffff/6366f1?text=Alex" alt="Alex" class="absolute inset-0 w-80 h-80 md:w-96 md:h-96 rounded-full mx-auto object-cover border-8 border-white shadow-2xl" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          With over 8 years of experience in graphic design, I've helped numerous brands find their visual voice.
+        </p>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+            I'm a passionate graphic designer dedicated to creating meaningful visual experiences that connect with people. 
+            My approach combines strategic thinking with artistic expression to deliver designs that not only look great 
+            but also achieve business objectives.
+          </p>
+          <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+            When I'm not designing, you'll find me exploring new art exhibitions, experimenting with photography, 
+            or hiking in nature to find inspiration for my next creative project.
+          </p>
+          <div class="grid grid-cols-2 gap-6">
+            <div>
+              <h3 class="text-2xl font-bold text-indigo-600 mb-2">8+</h3>
+              <p class="text-gray-600">Years Experience</p>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-indigo-600 mb-2">50+</h3>
+              <p class="text-gray-600">Projects Completed</p>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-indigo-600 mb-2">25+</h3>
+              <p class="text-gray-600">Happy Clients</p>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-indigo-600 mb-2">5</h3>
+              <p class="text-gray-600">Industry Awards</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-8">Skills & Expertise</h3>
+          <div class="space-y-6">
+            <div class="skill-item" data-skill="95">Logo Design</div>
+            <div class="skill-item" data-skill="90">Brand Identity</div>
+            <div class="skill-item" data-skill="88">Typography</div>
+            <div class="skill-item" data-skill="85">Illustration</div>
+            <div class="skill-item" data-skill="82">Web Design</div>
+            <div class="skill-item" data-skill="80">Packaging</div>
+            <div class="skill-item" data-skill="75">Motion Graphics</div>
+            <div class="skill-item" data-skill="70">Photography</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">My Services</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          I offer comprehensive design solutions tailored to your unique needs and goals.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="service-card">
+          <div class="icon-wrapper"><svg data-icon="Palette"></svg></div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Brand Identity</h3>
+          <p class="text-gray-600 leading-relaxed">Creating unique brand identities that capture your essence and resonate with your audience.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon-wrapper"><svg data-icon="Layout"></svg></div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Web & UI Design</h3>
+          <p class="text-gray-600 leading-relaxed">Designing intuitive, beautiful interfaces for websites and applications.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon-wrapper"><svg data-icon="PenTool"></svg></div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Illustration</h3>
+          <p class="text-gray-600 leading-relaxed">Custom illustrations that bring your stories and concepts to life.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon-wrapper"><svg data-icon="Code"></svg></div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Motion Graphics</h3>
+          <p class="text-gray-600 leading-relaxed">Engaging animations and visual effects for digital platforms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Section -->
+  <section id="work" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">My Work</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          A selection of my recent projects showcasing my design approach and creative process.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="project-card">
+          <div class="relative overflow-hidden">
+            <img src="https://placehold.co/600x400/6366f1/ffffff?text=Brand+Identity" alt="Brand Identity for Tech Startup" class="w-full h-64 object-cover" />
+            <div class="overlay"></div>
+            <span class="category-tag">Branding</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Brand Identity for Tech Startup</h3>
+            <p class="text-gray-600 mb-4 leading-relaxed">Complete brand identity package including logo, color palette, typography, and brand guidelines.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="tool-tag">Adobe Illustrator</span>
+              <span class="tool-tag">Photoshop</span>
+              <span class="tool-tag">InDesign</span>
+            </div>
+            <button class="view-project-btn">View Project <svg data-icon="ExternalLink" width="16" height="16"></svg></button>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="relative overflow-hidden">
+            <img src="https://placehold.co/600x400/8b5cf6/ffffff?text=Web+Design" alt="E-commerce Website Redesign" class="w-full h-64 object-cover" />
+            <div class="overlay"></div>
+            <span class="category-tag">Web Design</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">E-commerce Website Redesign</h3>
+            <p class="text-gray-600 mb-4 leading-relaxed">Modern, responsive e-commerce platform with improved UX and conversion optimization.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="tool-tag">Figma</span>
+              <span class="tool-tag">Adobe XD</span>
+              <span class="tool-tag">After Effects</span>
+            </div>
+            <button class="view-project-btn">View Project <svg data-icon="ExternalLink" width="16" height="16"></svg></button>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="relative overflow-hidden">
+            <img src="https://placehold.co/600x400/06b6d4/ffffff?text=Packaging" alt="Packaging Design Collection" class="w-full h-64 object-cover" />
+            <div class="overlay"></div>
+            <span class="category-tag">Packaging</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Packaging Design Collection</h3>
+            <p class="text-gray-600 mb-4 leading-relaxed">Sustainable packaging solutions for premium lifestyle products with custom illustrations.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="tool-tag">Illustrator</span>
+              <span class="tool-tag">Photoshop</span>
+              <span class="tool-tag">Cinema 4D</span>
+            </div>
+            <button class="view-project-btn">View Project <svg data-icon="ExternalLink" width="16" height="16"></svg></button>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="relative overflow-hidden">
+            <img src="https://placehold.co/600x400/10b981/ffffff?text=Annual+Report" alt="Corporate Annual Report" class="w-full h-64 object-cover" />
+            <div class="overlay"></div>
+            <span class="category-tag">Print Design</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Corporate Annual Report</h3>
+            <p class="text-gray-600 mb-4 leading-relaxed">Award-winning annual report featuring data visualization and premium print finishes.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="tool-tag">InDesign</span>
+              <span class="tool-tag">Illustrator</span>
+              <span class="tool-tag">Photoshop</span>
+            </div>
+            <button class="view-project-btn">View Project <svg data-icon="ExternalLink" width="16" height="16"></svg></button>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="relative overflow-hidden">
+            <img src="https://placehold.co/600x400/f59e0b/ffffff?text=UI+Design" alt="App Interface Design" class="w-full h-64 object-cover" />
+            <div class="overlay"></div>
+            <span class="category-tag">UI/UX</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">App Interface Design</h3>
+            <p class="text-gray-600 mb-4 leading-relaxed">Intuitive mobile application interface with smooth user flows and micro-interactions.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="tool-tag">Figma</span>
+              <span class="tool-tag">Sketch</span>
+              <span class="tool-tag">Principle</span>
+            </div>
+            <button class="view-project-btn">View Project <svg data-icon="ExternalLink" width="16" height="16"></svg></button>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="relative overflow-hidden">
+            <img src="https://placehold.co/600x400/ef4444/ffffff?text=Motion+Graphics" alt="Motion Graphics Reel" class="w-full h-64 object-cover" />
+            <div class="overlay"></div>
+            <span class="category-tag">Animation</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Motion Graphics Reel</h3>
+            <p class="text-gray-600 mb-4 leading-relaxed">Dynamic motion graphics package for brand storytelling and social media content.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="tool-tag">After Effects</span>
+              <span class="tool-tag">Premiere Pro</span>
+              <span class="tool-tag">Cinema 4D</span>
+            </div>
+            <button class="view-project-btn">View Project <svg data-icon="ExternalLink" width="16" height="16"></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gradient-to-br from-indigo-600 to-purple-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Let's Work Together</h2>
+        <p class="text-xl text-indigo-100 max-w-3xl mx-auto">
+          Ready to bring your vision to life? I'd love to hear about your project and discuss how we can collaborate.
+        </p>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-12">
+        <div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 text-white">
+            <h3 class="text-2xl font-bold mb-8">Get In Touch</h3>
+            <div class="space-y-6">
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mr-4"><svg data-icon="Mail"></svg></div>
+                <div>
+                  <p class="font-semibold">Email</p>
+                  <p class="text-indigo-100">hello@alexdesigns.com</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mr-4"><svg data-icon="Phone"></svg></div>
+                <div>
+                  <p class="font-semibold">Phone</p>
+                  <p class="text-indigo-100">+1 (555) 123-4567</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mr-4"><svg data-icon="MapPin"></svg></div>
+                <div>
+                  <p class="font-semibold">Location</p>
+                  <p class="text-indigo-100">New York, NY</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-white/20">
+              <h4 class="font-semibold mb-4">Follow Me</h4>
+              <div class="flex space-x-4">
+                <a href="#" class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center hover:bg-white/30 transition-colors duration-200"><svg data-icon="Github"></svg></a>
+                <a href="#" class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center hover:bg-white/30 transition-colors duration-200"><svg data-icon="Twitter"></svg></a>
+                <a href="#" class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center hover:bg-white/30 transition-colors duration-200"><svg data-icon="Instagram"></svg></a>
+                <a href="#" class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center hover:bg-white/30 transition-colors duration-200"><svg data-icon="Linkedin"></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <form id="contact-form" class="bg-white rounded-xl p-8 shadow-xl">
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none" placeholder="John" required />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none" placeholder="Doe" required />
+              </div>
+            </div>
+            <div class="mb-6">
+              <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+              <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none" placeholder="john@example.com" required />
+            </div>
+            <div class="mb-6">
+              <label class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+              <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none" placeholder="Project Inquiry" required />
+            </div>
+            <div class="mb-6">
+              <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+              <textarea rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="w-full bg-indigo-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-indigo-700 transition-colors duration-200">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="text-2xl font-bold mb-4 md:mb-0">
+          Alex<span class="text-indigo-400">.</span>
+        </div>
+        <div class="text-center md:text-right">
+          <p class="text-gray-400 mb-2">
+            © 2024 Alex Designs. All rights reserved.
+          </p>
+          <p class="text-gray-500 text-sm">
+            Crafted with passion for creative excellence.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
